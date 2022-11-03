@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/font-awesome/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css" />
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-3 col-md-2 align-self-center">
+            <img
+              src="./img/logoLight.svg"
+              alt="Logo"
+              class="img-fluid svg-white" />
+          </div>
+          <div class="col">
+            <h1>News</h1>
+            <h2>Simple direct news aggregation</h2>
+          </div>
+          <div class="col-md-6 col-xl-2 mt-4">
+            <a
+              href="#"
+              role="button"
+              class="btn btn-lg btn-primary text-nowrap"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Create an account">Log-In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+  </script>
+</html>
