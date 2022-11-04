@@ -1,3 +1,4 @@
+/* Page setup and general classes */
 * {
   margin: 0;
   padding: 0;
@@ -29,15 +30,26 @@ body {
 
 .container {
   width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+
 }
+
+/* Navbar classes */
 
 .navbar {
   background-color: rgb(68, 99, 139);
   height: 6%;
   width: 100%;
 }
+
+.burger {
+  margin-right: 25px;
+}
+
+.search {
+  height: 60%;
+}
+
+/* Main area classes */
 
 .grid-div {
   height: 94%;
@@ -54,12 +66,17 @@ body {
   grid-row: 1 / 2;
   transition: 0.5s;
   background-color: rgb(220, 224, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sideBarContent {
+  height: 95%;
+  width: 90%;
+  border: 1px solid rgb(68, 99, 139);
 }
 
 .sidebarShow {
   width: 100%;
-}
-
-.burger {
-  margin-right: 25px;
 }

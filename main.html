@@ -21,29 +21,15 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="container-fluid">
         <div
           class="collapse navbar-collapse d-flex justify-content-between"
           id="navbar">
-          <ul class="navbar-nav">
-            <!-- <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#sidebar">
-              <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <li class="nav-item"
-              type="button"
-              id="sidebarBtn">
-              <span class="navbar-toggler-icon"></span>
+          <ul class="navbar-nav col-sm-4">
+            <li class="nav-item" >
+              <a class="nav-link" type="button" id="sidebarBtn">
+              <i class="navbar-toggler-icon"></i>
+              </a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#"
@@ -51,25 +37,32 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./saved.html"
-                ><i class="fa fa-lg fa-info pr-1"></i>Saved</a
-              >
+              <a class="nav-link" href="./saved.html">
+                <i class="fa fa-lg fa-info pr-1"></i>
+                Saved
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html"
-                ><i class="fa fa-lg fa-list pr-1"></i>About</a
-              >
+              <a class="nav-link" href="./about.html">
+                <i class="fa fa-lg fa-list pr-1"></i>
+                About
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contact.html"
-                ><i class="fa fa-lg fa-address-card pr-1"></i>Contact</a
-              >
+              <a class="nav-link" href="./contact.html">
+                <i class="fa fa-lg fa-address-card pr-1"></i>Contact
+              </a>
             </li>
           </ul>
-          <div class="form-outline">
-            <input type="search" id="form1" class="form-control" placeholder="Search News" aria-label="Search" />
+          <div class="form-outline col-sm-6">
+            <input
+              type="search"
+              id="form1"
+              class="form-control search"
+              placeholder="Search News"
+              aria-label="Search" />
           </div>
-          <span class="navbar-text text-sm-right">
+          <span class="navbar-text text-sm-right col-sm-2">
             <a role="button" data-toggle="modal" data-target="#loginModal">
               <i class="fa fa-sign-in"></i> Login
             </a>
@@ -78,7 +71,12 @@
       </div>
     </nav>
     <div class="grid-div">
-      <div class="sidebar " id="sidebar"></div>
+      <div class="sidebar" id="sidebar">
+        <div class="sideBarContent">
+          <div class="recentSearches"></div>
+          <div class="savedSearches"></div>
+        </div>
+      </div>
       <div class="main"></div>
     </div>
   </body>
