@@ -7,7 +7,7 @@
 
 body {
   width: 100vw;
-  background-color: rgb(152, 176, 200);
+  background-color: rgb(220, 224, 233);
 }
 
 .parallax-window {
@@ -45,4 +45,12 @@ font-family: 'Times New Roman', Times, serif;
 
 .bold {
   font-weight: bolder;
+}
+
+.container {
+  width: 100%;
+}
+
+.navbar {
+  background-color: rgb(68, 99, 139);
 }

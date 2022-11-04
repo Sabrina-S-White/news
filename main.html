@@ -1,51 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News</title>
-</head>
-<body>
-  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-    <div class="container">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              ><i class="fa fa-lg fa-home pr-1"></i>Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./saved.html"
-              ><i class="fa fa-lg fa-info pr-1"></i>Saved</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html"
-              ><i class="fa fa-lg fa-list pr-1"></i>About</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html"
-              ><i class="fa fa-lg fa-address-card pr-1"></i>Contact</a
-            >
-          </li>
-        </ul>
-        <span class="navbar-text ml-auto">
-          <a role="button" data-toggle="modal" data-target="#loginModal">
-            <i class="fa fa-sign-in"></i> Login
-          </a>
-        </span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/font-awesome/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-flex justify-content-between"
+          id="navbar">
+          <ul class="navbar-nav">
+            <!-- <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#sidebar">
+              <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <li class="nav-item"
+              type="button"
+              id="sidebarBtn">
+              <span class="navbar-toggler-icon"></span>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                ><i class="fa fa-lg fa-home pr-1"></i>Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./saved.html"
+                ><i class="fa fa-lg fa-info pr-1"></i>Saved</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html"
+                ><i class="fa fa-lg fa-list pr-1"></i>About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html"
+                ><i class="fa fa-lg fa-address-card pr-1"></i>Contact</a
+              >
+            </li>
+          </ul>
+          <div class="form-outline">
+            <input type="search" id="form1" class="form-control" placeholder="Search News" aria-label="Search" />
+          </div>
+          <span class="navbar-text text-sm-right">
+            <a role="button" data-toggle="modal" data-target="#loginModal">
+              <i class="fa fa-sign-in"></i> Login
+            </a>
+          </span>
+        </div>
       </div>
+    </nav>
+    <div class="grid-div">
+      <div class="sidebar " id="sidebar"></div>
+      <div class="main"></div>
     </div>
-  </nav>
-</body>
+  </body>
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="node_modules/jquery-parallax.js/parallax.min.js"></script>
+  <script src="./main.js"></script>
 </html>
