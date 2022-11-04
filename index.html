@@ -20,38 +20,135 @@
       href="node_modules/bootstrap-social/bootstrap-social.css" />
   </head>
   <body>
-    <div class="jumbotron jumbotron-fluid">
+    <div
+      class="parallax-window"
+      data-parallax="scroll"
+      data-image-src="./img/bg-imgs/paper.jpg">
+      <header>
+        <div>
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container pt-3">
+              <div class="row">
+                <div class="col-xs-6 col-md-2 text-center">
+                  <img
+                    src="./img/logoLight.svg"
+                    alt="Logo"
+                    class="img-fluid svg-white" />
+                </div>
+                <div class="col align-self-center justify-content-center">
+                  <h1 class="bold">News</h1>
+                  <h2>Simple direct news aggregation</h2>
+                </div>
+                <div class="col-sm-2 align-self-end">
+                  <a
+                    href="#"
+                    role="button"
+                    class="btn btn-light text-nowrap"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    title="Get started!">
+                    Create an Account
+                  </a>
+                </div>
+                <div class="col-sm-1 align-self-end text-sm-right">
+                  <a
+                    href="#"
+                    role="button"
+                    class="btn btn-light text-nowrap"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    title="Get started!">
+                    Log In
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="parallax-window"
+    data-parallax="scroll"
+    data-image-src="./img/bg-imgs/paper.jpg">
+      <main>
+        <div class="container-fluid pane-2 px-5">
+          <div class="row row-content align-items-center p-3">
+            <div class="col-sm-4 order-sm-last col-md-3">
+              <h2 class="text-sm-right font-italic">Get the news you want in one place</h2>
+            </div>
+              <div class="col">
+                  <h2 class="bold">News</h2>
+                  <h4 class="d-none d-sm-block">
+                    News is a simple, effective way of getting the articles you need conveniently in one place. Create an account, type in a keyword, and News will search news sites for relevant articles. 
+                  </h4>
+              </div>
+            </div>
+            <div class="row row-content align-items-center justify-content-start pb-5 pl-3">
+              <div class="col-sm-2 align-self-center">
+                <a
+                  href="#"
+                  role="button"
+                  class="btn btn-light text-nowrap"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="Get started!">
+                  Create an Account
+                </a>
+              </div>
+              <div class="col-sm-1 align-self-center">
+                <a
+                  href="#"
+                  role="button"
+                  class="btn btn-light text-nowrap"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="Get started!">
+                  Log In
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="site-footer">
       <div class="container">
         <div class="row">
-          <div class="col-4 col-sm-3 col-md-2 align-self-center">
-            <img
-              src="./img/logoLight.svg"
-              alt="Logo"
-              class="img-fluid svg-white" />
-          </div>
-          <div class="col">
-            <h1>News</h1>
-            <h2>Simple direct news aggregation</h2>
-          </div>
-          <div class="col-md-6 col-xl-2 mt-4">
+          <div class="col-5 col-sm-6 text-center">
+            <h5>Links</h5>
             <a
-              href="#"
+              class="btn btn-social-icon btn-linkedin"
+              href="https://www.linkedin.com/in/sabrina-white-7ba594b7/"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a class="btn btn-social-icon btn-github" href="https://github.com/Sabrina-S-White"
+              ><i class="fa fa-github"></i
+            ></a>
+          </div>
+          <div class="col-sm-4 text-center">
+            <a
               role="button"
-              class="btn btn-lg btn-primary text-nowrap"
-              data-toggle="tooltip"
-              data-placement="bottom"
-              title="Create an account">Log-In</a>
+              class="btn btn-link"
+              href="mailto:sabrina.scherma@gmail.com"
+              ><i class="fa fa-lg text-primary fa-envelope"></i>
+              sabrina.scherma@gmail.com</a
+            >
+            <a
+              role="link"
+              class="btn btn-link"
+              href="www.sabrina-white.com"
+              ><i class="fa fa-lg fa-light fa-globe"></i>
+              My portfolio site</a
+            >
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script>
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="node_modules/jquery-parallax.js/parallax.min.js"></script>
+  <script src="./main.js"></script>
 </html>
