@@ -54,8 +54,8 @@ a {
 }
 
 /* Main area classes */
-.main {
-  padding: 20% 1% 5% 1%;
+.mainDiv {
+  height: 90vh;
 }
 
 .sidebar {
