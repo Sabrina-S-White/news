@@ -1,0 +1,82 @@
+/* Page setup and general classes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  background-color: rgb(237, 237, 240);
+}
+
+a {
+  text-align: center;
+}
+
+.btn {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.svg-white {
+  filter: invert(98%) sepia(10%) saturate(478%) hue-rotate(169deg) brightness(99%) contrast(92%);
+  height: 100%;
+  width: auto;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.container {
+  width: 100%;
+}
+
+/* Navbar classes */
+.navbar {
+  background-color: rgb(68, 99, 139);
+  height: 10%;
+  width: 100%;
+}
+
+#navbar {
+  background-color: rgb(68, 99, 139);
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main area classes */
+.main {
+  padding: 20% 1% 5% 1%;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0rem;
+  transition: 0.5s;
+  background-color: rgba(220, 224, 233, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+}
+
+.sideBarContent {
+  height: 95%;
+  width: 90%;
+}
+
+.sidebarShow {
+  width: 10rem;
+}
+
+/*# sourceMappingURL=main.css.map */

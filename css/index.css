@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  width: 100vw;
+  background-color: rgb(220, 224, 233);
+}
+
+.parallax-window {
+  min-height: 500px;
+  background: transparent;
+}
+
+.jumbotron {
+  background-image: linear-gradient(to right, rgb(41, 64, 85), rgb(68, 99, 139));
+  color: #EDF2F4;
+  padding: 10px;
+  margin: 0;
+}
+
+.btn {
+  background-color: rgb(220, 224, 233);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.svg-white {
+  filter: invert(98%) sepia(10%) saturate(478%) hue-rotate(169deg) brightness(99%) contrast(92%);
+  height: 100%;
+  width: auto;
+}
+
+.pane-2 {
+  background-image: linear-gradient(to right, rgb(152, 176, 200), rgb(217, 222, 230), rgb(237, 237, 240));
+}
+
+.site-footer {
+  background-image: linear-gradient(to right, rgb(152, 176, 200), rgb(217, 222, 230), rgb(237, 237, 240));
+  padding: 20px 0;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.container {
+  width: 100%;
+}
+
+.navbar {
+  background-color: rgb(68, 99, 139);
+}
+
+/*# sourceMappingURL=index.css.map */
