@@ -24,69 +24,81 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-      <div class="container-fluid align-content-center justify-content-center">
-        <a class="btn col-xs-1" href="#">
-          <i
-            class="fa fa-solid fa-bars d-sm-none"
-            id="sidebarBtn"
-            style="color: white; vertical-align: middle">
-          </i>
-        </a>
-        <form action="" class="col-8">
-          <div class="form-group form">
-            <input
-              type="text"
-              class="form-control form-control-sm"
-              id="searchBar"
-              placeholder="Search" />
+      <div class="container-fluid">
+        <div class="row align-content-center justify-content-center">
+          <div class="col-2 col-sm-1 icon-container pl-0">
+            <img
+              src="./img/logoLight.svg"
+              alt="Logo"
+              class="img-fluid svg-white" />
           </div>
-        </form>
-        <button
-          class="navbar-toggler col-2"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbar"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="fa fa-ellipsis-h" style="vertical-align: middle"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                ><i class="fa fa-home pr-1"></i>Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./saved.html">
-                <i class="fa fa-info pr-1"></i>
-                Saved
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">
-                <i class="fa fa-list pr-1"></i>
-                About
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">
-                <i class="fa fa-address-card pr-1"></i>Contact
-              </a>
-            </li>
-          </ul>
+          <a class="btn col-2 col-sm-1 icon-container pl-0" href="#">
+            <i
+              class="fa fa-solid fa-bars icon"
+              id="sidebarBtn"
+              style="color: white; vertical-align: middle">
+            </i>
+          </a>
+          <form action="" class="col-5 col-md-4 col-lg-5 d-flex pl-0">
+            <div class="form-group form">
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                id="searchBar"
+                placeholder="Search" />
+            </div>
+          </form>
+          <button
+            class="navbar-toggler col-2 mr-1"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="fa fa-ellipsis-h" style="vertical-align: middle"></span>
+          </button>
+          <div class="collapse navbar-collapse col-md-6 col-lg-4" id="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link icon-container" href="#"
+                  ><i class="fa fa-home pr-1 icon"></i>Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link icon-container" href="./saved.html">
+                  <i class="fa fa-info pr-1 icon"></i>
+                  Saved
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link icon-container" href="./about.html">
+                  <i class="fa fa-list pr-1 icon"></i>
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link icon-container" href="./contact.html">
+                  <i class="fa fa-address-card pr-1 icon"></i>Contact
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
-    <div class="container">
+    <div class="container-fluid">
       <div class="sidebar" id="sidebar">
         <div class="sideBarContent">
-          <div class="recentSearches"></div>
-          <div class="savedSearches"></div>
+          <div class="recentSearches">
+            <h4>Recent Searches</h4>
+          </div>
+          <div class="savedSearches">
+            <h4>Saved Searches</h4>
+          </div>
         </div>
       </div>
-      <div class="main" >
+      <div class="main">
         <div class="card newsCard">
           <img
             src="./img/bg-imgs/paper.jpg"
@@ -215,23 +227,7 @@
             <a href="#" class="btn btn-light">Close</a>
           </div>
         </div>
-        <div class="card newsCard">
-          <img
-            src="./img/bg-imgs/paper.jpg"
-            alt="Article image"
-            class="card-img-top" />
-          <div class="card-body">
-            <h3 class="card-title">Article</h3>
-            <p class="card-text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
-              amet officia reprehenderit tempora quae nihil in a. Vero, minus?
-              Atque commodi temporibus repellendus aut aspernatur natus numquam
-              voluptatem unde quaerat.
-            </p>
-            <a href="#" class="btn btn-light">Close</a>
-          </div>
-        </div>
-    </div>
+      </div>
     </div>
   </body>
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

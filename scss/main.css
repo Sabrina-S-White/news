@@ -10,7 +10,7 @@ body {
   width: 100vw;
   height: auto;
   background-color: rgb(237, 237, 240);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 a {
@@ -18,12 +18,11 @@ a {
 }
 
 .btn {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .svg-white {
-  filter: invert(98%) sepia(10%) saturate(478%) hue-rotate(169deg)
-    brightness(99%) contrast(92%);
+  filter: invert(98%) sepia(10%) saturate(478%) hue-rotate(169deg) brightness(99%) contrast(92%);
   height: 100%;
   width: auto;
 }
@@ -47,7 +46,6 @@ a {
 }
 
 /* Navbar classes */
-
 .navbar {
   background-color: rgb(68, 99, 139);
   height: auto;
@@ -71,7 +69,6 @@ a {
 }
 
 /* Main area classes */
-
 .main {
   height: 90vh;
   display: grid;
@@ -80,7 +77,7 @@ a {
   gap: 25px;
   padding-top: 10px;
   overflow-y: scroll;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 .sidebar {
@@ -93,7 +90,7 @@ a {
   align-items: center;
   position: absolute;
   z-index: 100;
-  left:0;
+  left: 0;
 }
 
 .sideBarContent {
@@ -113,7 +110,6 @@ a {
   width: 12rem;
 }
 
-// card styling 
 .newsCard {
   height: 550px;
 }
@@ -123,9 +119,8 @@ a {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media only screen and (max-width: 450px) {
   .main {
     grid-template-columns: 1fr;
   }
-}
+}/*# sourceMappingURL=main.css.map */

@@ -3,13 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
   overflow-x: hidden;
 }
 
 body {
   width: 100vw;
+  height: auto;
   background-color: rgb(237, 237, 240);
+  font-family: "Times New Roman", Times, serif;
 }
 
 a {
@@ -34,15 +35,29 @@ a {
   width: 100%;
 }
 
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.5rem !important;
+}
+
 /* Navbar classes */
 .navbar {
   background-color: rgb(68, 99, 139);
-  height: 10%;
+  height: auto;
   width: 100%;
 }
 
 #navbar {
   background-color: rgb(68, 99, 139);
+}
+
+.form-group {
+  width: 100%;
 }
 
 .form {
@@ -54,8 +69,15 @@ a {
 }
 
 /* Main area classes */
-.mainDiv {
+.main {
   height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 25px;
+  padding-top: 10px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .sidebar {
@@ -68,6 +90,7 @@ a {
   align-items: center;
   position: absolute;
   z-index: 100;
+  left: 0;
 }
 
 .sideBarContent {
@@ -75,8 +98,31 @@ a {
   width: 90%;
 }
 
+.recentSearches {
+  height: 40%;
+}
+
+.savedSearches {
+  height: 60%;
+}
+
 .sidebarShow {
-  width: 10rem;
+  width: 12rem;
+}
+
+.newsCard {
+  height: 550px;
+}
+
+@media only screen and (max-width: 770px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
