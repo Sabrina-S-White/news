@@ -11,8 +11,24 @@ body {
 }
 
 .parallax-window {
-  min-height: 500px;
+  min-height: 350px;
   background: transparent;
+}
+
+.para-min {
+  min-height: 200px;
+}
+
+.para-one {
+  min-height: 450px;
+}
+
+.para-two {
+  min-height: 800px;
+}
+
+.para-three {
+  min-height: 1000px;
 }
 
 .jumbotron {
@@ -23,7 +39,6 @@ body {
 }
 
 .btn {
-background-color: rgb(220, 224, 233);
 font-family: 'Times New Roman', Times, serif;
 }
 
@@ -33,9 +48,14 @@ font-family: 'Times New Roman', Times, serif;
   width: auto;
 }
 
+.svg-black {
+  height: 100px;
+  width: auto;
+}
+
 .pane-2 {
   background-image: linear-gradient(to right, rgb(152, 176, 200), rgb(217, 222, 230), rgb(237, 237, 240));
-
+  min-height: 250px;
 }
 
 .site-footer {
@@ -54,3 +74,16 @@ font-family: 'Times New Roman', Times, serif;
 .navbar {
   background-color: rgb(68, 99, 139);
 }
+
+.form-group {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+

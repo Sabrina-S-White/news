@@ -21,6 +21,11 @@ a {
   font-family: 'Times New Roman', Times, serif;
 }
 
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .svg-white {
   filter: invert(98%) sepia(10%) saturate(478%) hue-rotate(169deg)
     brightness(99%) contrast(92%);
@@ -116,6 +121,16 @@ a {
 // card styling 
 .newsCard {
   height: 550px;
+}
+
+.flag-style {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.flag-style-red {
+  filter: invert(9%) sepia(87%) saturate(7030%) hue-rotate(343deg) brightness(101%) contrast(99%);
 }
 
 @media only screen and (max-width: 770px) {
