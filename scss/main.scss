@@ -85,7 +85,7 @@ a {
   gap: 25px;
   padding-top: 10px;
   overflow-y: scroll;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 .sidebar {
@@ -98,7 +98,7 @@ a {
   align-items: center;
   position: absolute;
   z-index: 100;
-  left:0;
+  left: 0;
 }
 
 .sideBarContent {
@@ -118,7 +118,7 @@ a {
   width: 12rem;
 }
 
-// card styling 
+// card styling
 .newsCard {
   height: 550px;
 }
@@ -127,10 +127,13 @@ a {
   position: absolute;
   right: 10px;
   top: 10px;
+  height: 50px;
+  width: auto;
 }
 
 .flag-style-red {
-  filter: invert(9%) sepia(87%) saturate(7030%) hue-rotate(343deg) brightness(101%) contrast(99%);
+  filter: invert(9%) sepia(87%) saturate(7030%) hue-rotate(343deg)
+    brightness(101%) contrast(99%);
 }
 
 @media only screen and (max-width: 770px) {
@@ -142,5 +145,14 @@ a {
 @media only screen and (max-width: 450px) {
   .main {
     grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 475px) {
+  html {
+    overflow-y: hidden;
+    .main {
+      overflow-y: scroll;
+    }
   }
 }
