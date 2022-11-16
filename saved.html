@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News</title>
+    <!-- build:css css/main.css -->
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
@@ -21,16 +19,22 @@
     <link
       rel="stylesheet"
       href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <!-- endbuild -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
   </head>
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container-fluid">
         <div class="row align-content-center justify-content-center">
           <div class="col-2 col-sm-1 icon-container pl-0">
-            <img
-              src="./img/logoLight.svg"
-              alt="Logo"
-              class="img-fluid svg-white" />
+            <a href="./main.html">
+              <img
+                src="./img/logoLight.svg"
+                alt="Logo"
+                class="img-fluid svg-white" />
+            </a>
           </div>
           <a class="btn col-2 col-sm-1 icon-container pl-0" href="#">
             <i
@@ -103,7 +107,7 @@
       <div class="main">
         <div class="card newsCard">
           <img
-            src="./img/bg-imgs/paper.jpg"
+            src="./img/paper.jpg"
             alt="Article image"
             class="card-img-top" />
           <div class="card-body">
@@ -120,7 +124,7 @@
         </div>
         <div class="card newsCard">
           <img
-            src="./img/bg-imgs/paper.jpg"
+            src="./img/paper.jpg"
             alt="Article image"
             class="card-img-top" />
           <div class="card-body">
@@ -136,7 +140,7 @@
         </div>
         <div class="card newsCard">
           <img
-            src="./img/bg-imgs/paper.jpg"
+            src="./img/paper.jpg"
             alt="Article image"
             class="card-img-top" />
           <div class="card-body">
@@ -154,10 +158,12 @@
       </div>
     </div>
   </body>
+  <!-- build:js js/main.js -->
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="node_modules/jquery-parallax.js/parallax.min.js"></script>
+  <!-- endbuild -->
   <script src="./js/main.js"></script>
 </html>
